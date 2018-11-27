@@ -1,7 +1,19 @@
 const pkg = require('./package')
+const MYPAGES = require("./data/pages.json");
 
 module.exports = {
   mode: 'universal',
+  generate: {
+    routes: ()=>{
+      let routes = MYPAGES.map(r =>{
+        console.log('=>',r.routes);
+        
+        return "/" + r.routes;
+      })
+      return routes;
+    }
+
+  },
 
   /*
   ** Headers of the page
@@ -18,6 +30,7 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' }
     ]
   },
+
 
   /*
   ** Customize the progress-bar color

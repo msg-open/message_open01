@@ -7,15 +7,7 @@
       xs12
       sm8
       md6>
-      111111
+      sertifikat
     </v-flex>
   </v-layout>
 </template>
-
-<script>
-
-export default {
-  components: {
-  }
-}
-</script>

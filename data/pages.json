@@ -1,0 +1,50 @@
+[
+    {
+        "id":6,
+        "route":"lechebnyj-massazh",
+        "description":"",
+        "keyword": "",
+        "title":""
+
+    },
+    {
+        "id":5,
+        "route":"sportivnyj",
+        "description":"",
+        "keyword": "",
+        "title":""
+
+    },
+    {
+        "id":4,
+        "route":"anticelljulitnyj",
+        "description":"",
+        "keyword": "",
+        "title":""
+
+    },
+    {
+        "id":3,
+        "route":"medovyj",
+        "description":"",
+        "keyword": "",
+        "title":""
+
+    },
+    {
+        "id":2,
+        "route":"detski",
+        "description":"",
+        "keyword": "",
+        "title":""
+
+    },
+    {
+        "id":1,
+        "route":"sertifikat",
+        "description":"",
+        "keyword": "",
+        "title":""
+
+    }
+]

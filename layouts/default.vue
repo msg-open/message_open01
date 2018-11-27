@@ -30,31 +30,9 @@
       app
     >
       <v-toolbar-side-icon @click="drawer = !drawer" />
-      <v-btn
-        icon
-        @click.stop="miniVariant = !miniVariant"
-      >
-        <v-icon v-html="miniVariant ? 'chevron_right' : 'chevron_left'" />
-      </v-btn>
-      <v-btn
-        icon
-        @click.stop="clipped = !clipped"
-      >
-        <v-icon>web</v-icon>
-      </v-btn>
-      <v-btn
-        icon
-        @click.stop="fixed = !fixed"
-      >
-        <v-icon>remove</v-icon>
-      </v-btn>
+
       <v-toolbar-title v-text="title"/>
-      <v-btn
-        icon
-        @click.stop="rightDrawer = !rightDrawer"
-      >
-        <v-icon>menu</v-icon>
-      </v-btn>
+        
     </v-toolbar>
     <v-content>
       <v-container>
@@ -81,8 +59,10 @@
     <v-footer
       :fixed="fixed"
       app
-    >
-      <span>&copy; 2017</span>
+      class="pa-3"
+    >  
+      <v-spacer/>
+      <div>&copy; {{ new Date().getFullYear() }}</div>
     </v-footer>
   </v-app>
 </template>
@@ -95,13 +75,18 @@
         drawer: true,
         fixed: false,
         items: [
-          { icon: 'apps', title: 'Welcome', to: '/' },
-          { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' }
+          { icon: 'apps', title: 'Массаж в майкопе', to: '/' },
+          { icon: 'bubble_chart', title: 'Лечебный', to: '/lechebnyj-massazh' },
+          { icon: 'bubble_chart', title: 'Спортивный', to: '/sportivnyj' },
+          { icon: 'bubble_chart', title: 'Антицеллюлитный', to: '/anticelljulitnyj' },
+          { icon: 'bubble_chart', title: 'Медовый', to: '/medovyj' },
+          { icon: 'bubble_chart', title: 'Детский', to: '/detski' },
+          { icon: 'apps', title: 'Сертификат, Мед.Диплом', to: '/sertifikat' }
         ],
         miniVariant: false,
         right: true,
         rightDrawer: false,
-        title: 'Vuetify.js'
+        title: 'Массаж в майкопе!'
       }
     }
   }
